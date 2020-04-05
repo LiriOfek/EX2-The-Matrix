@@ -13,7 +13,9 @@ Purpose: This file print the chess table of given character
 #define CHAR_ZERO ('0')
 #define INITIAL_INDEX (1)
 #define ENTER_STRING ("\n")
-
+#define EVEN_NUMBER (2)
+#define SPACE_STRING (" ")
+#define PRINT_CHARACTER ("%c")
 
 int get_number_from_user() {
 	/********************************************************\
@@ -73,5 +75,51 @@ void print_chess_table(int size_of_table,
 			print_character_or_space(row, column, character);
 		}
 		printf(ENTER_STRING);
+	}
+}
+
+void print_character_or_space(int row,
+								int column,
+								char character) {
+	/********************************************************\
+	* Function name - print_character_or_space
+	*
+	* Function Purpose - print character or space according to
+	*					 the index of row and the column in the table
+	*
+	* Parameters - IN int row - the index of the row in the the table
+	*			   IN int column - the index of the column in the table
+	*			   IN char character - the character that will be printed
+	*
+	* Return Value - there isn't return value
+	*
+	* Side Effects - this function has no side effects
+	*
+	* Semantics - this function print the given character or space
+	*			  according to the index of the row and the column in the table
+	*
+	* Author - Liri
+	\********************************************************/
+	if (row % EVEN_NUMBER == 0)
+	{
+		if (column % EVEN_NUMBER == 0)
+		{
+			printf(SPACE_STRING);
+		}
+		else
+		{
+			printf(PRINT_CHARACTER, character);
+		}
+	}
+	else
+	{
+		if (column % EVEN_NUMBER == 0)
+		{
+			printf(PRINT_CHARACTER, character);
+		}
+		else
+		{
+			printf(SPACE_STRING);
+		}
 	}
 }
