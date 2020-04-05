@@ -38,6 +38,7 @@ void print_multiplication_table() {
 		{
 			result = row * column;
 			if (result >= DECIMAL)
+				/*add less space*/
 			{
 				printf("%d      ", result);
 			}
