@@ -5,8 +5,7 @@ Purpose: This file print the chess table of given character
 		 and in given size
 \********************************************************/
 
-#include <stdio.h>
-
+#define _CRT_SECURE_NO_WARNINGS
 #define ZERO (0)
 #define ENTER_CHAR ('\n')
 #define DECIMAL (10)
@@ -18,33 +17,7 @@ Purpose: This file print the chess table of given character
 #define PRINT_CHARACTER ("%c")
 #define SPACE_CHAR (' ')
 
-int get_number_from_user() {
-	/********************************************************\
-	* Function name - get_number_from_user
-	*
-	* Function Purpose - get the number that the user type
-	*
-	* Parameters - OUT integer number - the number that the user type
-	*
-	* Return Value - the number that the user type
-	*
-	* Side Effects - this function has no side effects
-	*
-	* Semantics - this function get the number that the user types
-	*			  and return it.
-	*
-	* Author - Liri
-	\********************************************************/
-	int number = ZERO; /*the total number the user enter*/
-	int char_from_user; /*the next char from user*/
-
-	while ((char_from_user = getchar()) != ENTER_CHAR) {
-		/*multiply the digits seen already by 10 and
-		add the decimal value of the new digit*/
-		number = number * DECIMAL + (char_from_user - CHAR_ZERO);
-	}
-	return number;
-}
+#include <stdio.h>
 
 void print_character_or_space(int row, 
 								int column, 
@@ -155,7 +128,9 @@ void main() {
 
 	/*get number and character from user*/
 	printf("Enter number: ");
-	number_from_user = get_number_from_user();
+	scanf("%d", &number_from_user);
+	/*catch the \n*/
+	getchar();
 	printf("Enter character: ");
 	character_from_user = getchar();
 
