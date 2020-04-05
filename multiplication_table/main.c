@@ -49,3 +49,26 @@ void print_multiplication_table() {
 		printf("\n");
 	}
 }
+
+void main() {
+	/********************************************************\
+	* Function name - main
+	*
+	* Function Purpose - run the function that print the
+	*					 multiplication table from INITIAL_NUMBER
+	*					 to FINAL_NUMBER
+	*
+	* Parameters - no Input/Output parameters
+	*
+	* Return Value - there isn't return value
+	*
+	* Side Effects - this function has no side effects
+	*
+	* Semantics - run the function that print the
+	*			  multiplication table from INITIAL_NUMBER
+	*			  to FINAL_NUMBER
+	*
+	* Author - Liri
+	\********************************************************/
+	print_multiplication_table();
+}
