@@ -153,7 +153,7 @@ void main() {
 	int number_from_user = INITIAL_NUMBER; /*the number that the user enter*/
 	char character_from_user = SPACE_CHAR; /*the character that the user enter*/
 
-										   /*get number and character from user*/
+	/*get number and character from user*/
 	printf("Enter number: ");
 	number_from_user = get_number_from_user();
 	printf("Enter character: ");
