@@ -2,7 +2,7 @@
 File Name: main.c
 Author: Liri (4/4/2020)
 Purpose: This file print the multiplication table
-		 from INITIAL_NUMBER to FINAL_NUMBER
+from INITIAL_NUMBER to FINAL_NUMBER
 \********************************************************/
 
 #include <stdio.h>
@@ -29,9 +29,9 @@ void print_multiplication_table() {
 	*
 	* Author - Liri
 	\********************************************************/
-	int row; /*the row index of the multiplication table*/
-	int column; /*the column index of the multiplication table*/
-	int result; /*the result of the multiplication of row and column indexes*/
+	int row = INITIAL_NUMBER; /*the row index of the multiplication table*/
+	int column = INITIAL_NUMBER; /*the column index of the multiplication table*/
+	int result = INITIAL_NUMBER; /*the result of the multiplication of row and column indexes*/
 
 	for (row = INITIAL_NUMBER; row <= FINAL_NUMBER; row++)
 	{
