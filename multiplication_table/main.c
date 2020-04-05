@@ -29,9 +29,10 @@ void print_multiplication_table() {
 	*
 	* Author - Liri
 	\********************************************************/
-	int row;
-	int column;
-	int result;
+	int row; /*the row index of the multiplication table*/
+	int column; /*the column index of the multiplication table*/
+	int result; /*the result of the multiplication of row and column indexes*/
+
 	for (row = INITIAL_NUMBER; row <= FINAL_NUMBER; row++)
 	{
 		for (column = INITIAL_NUMBER; column <= FINAL_NUMBER; column++)
