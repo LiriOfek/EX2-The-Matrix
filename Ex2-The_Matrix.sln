@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "multiplication_table", "multiplication_table\multiplication_table.vcxproj", "{6ED1720D-BC17-4514-B2B9-4A5CE28CC0BE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chess_table", "chess_table\chess_table.vcxproj", "{9FA1FDF2-1191-41C7-920A-6DC0A04DDB22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{6ED1720D-BC17-4514-B2B9-4A5CE28CC0BE}.Release|x64.Build.0 = Release|x64
 		{6ED1720D-BC17-4514-B2B9-4A5CE28CC0BE}.Release|x86.ActiveCfg = Release|Win32
 		{6ED1720D-BC17-4514-B2B9-4A5CE28CC0BE}.Release|x86.Build.0 = Release|Win32
+		{9FA1FDF2-1191-41C7-920A-6DC0A04DDB22}.Debug|x64.ActiveCfg = Debug|x64
+		{9FA1FDF2-1191-41C7-920A-6DC0A04DDB22}.Debug|x64.Build.0 = Debug|x64
+		{9FA1FDF2-1191-41C7-920A-6DC0A04DDB22}.Debug|x86.ActiveCfg = Debug|Win32
+		{9FA1FDF2-1191-41C7-920A-6DC0A04DDB22}.Debug|x86.Build.0 = Debug|Win32
+		{9FA1FDF2-1191-41C7-920A-6DC0A04DDB22}.Release|x64.ActiveCfg = Release|x64
+		{9FA1FDF2-1191-41C7-920A-6DC0A04DDB22}.Release|x64.Build.0 = Release|x64
+		{9FA1FDF2-1191-41C7-920A-6DC0A04DDB22}.Release|x86.ActiveCfg = Release|Win32
+		{9FA1FDF2-1191-41C7-920A-6DC0A04DDB22}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
