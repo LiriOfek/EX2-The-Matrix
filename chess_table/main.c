@@ -7,7 +7,7 @@ Purpose: This file print the chess table of given character
 
 #include <stdio.h>
 
-#define INITIAL_NUMBER (0)
+#define ZERO (0)
 #define ENTER_CHAR ('\n')
 #define DECIMAL (10)
 #define CHAR_ZERO ('0')
@@ -35,7 +35,7 @@ int get_number_from_user() {
 	*
 	* Author - Liri
 	\********************************************************/
-	int number = INITIAL_NUMBER; /*the total number the user enter*/
+	int number = ZERO; /*the total number the user enter*/
 	int char_from_user; /*the next char from user*/
 
 	while ((char_from_user = getchar()) != ENTER_CHAR) {
@@ -68,9 +68,9 @@ void print_character_or_space(int row,
 	*
 	* Author - Liri
 	\********************************************************/
-	if (row % EVEN_NUMBER == 0)
+	if (row % EVEN_NUMBER == ZERO)
 	{
-		if (column % EVEN_NUMBER == 0)
+		if (column % EVEN_NUMBER == ZERO)
 		{
 			printf(SPACE_STRING);
 		}
@@ -81,7 +81,7 @@ void print_character_or_space(int row,
 	}
 	else
 	{
-		if (column % EVEN_NUMBER == 0)
+		if (column % EVEN_NUMBER == ZERO)
 		{
 			printf(PRINT_CHARACTER, character);
 		}
@@ -150,7 +150,7 @@ void main() {
 	*
 	* Author - Liri
 	\********************************************************/
-	int number_from_user = INITIAL_NUMBER; /*the number that the user enter*/
+	int number_from_user = ZERO; /*the number that the user enter*/
 	char character_from_user = SPACE_CHAR; /*the character that the user enter*/
 
 	/*get number and character from user*/
