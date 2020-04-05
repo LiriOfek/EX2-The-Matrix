@@ -2,7 +2,7 @@
 File Name: main.c
 Author: Liri (4/4/2020)
 Purpose: This file print the multiplication table
-		 from INITIAL_NUMBER to FINAL_NUMBER
+from INITIAL_NUMBER to FINAL_NUMBER
 \********************************************************/
 
 #include <stdio.h>
@@ -10,6 +10,9 @@ Purpose: This file print the multiplication table
 #define INITIAL_NUMBER (1)
 #define FINAL_NUMBER (9)
 #define DECIMAL (10)
+#define ENTER ("\n")
+#define NUMBER_WITH_6_SPACES ("%d      ")
+#define NUMBER_WITH_7_SPACES ("%d       ")
 
 void print_multiplication_table() {
 	/********************************************************\
@@ -41,14 +44,14 @@ void print_multiplication_table() {
 			if (result >= DECIMAL)
 				/*add less space*/
 			{
-				printf("%d      ", result);
+				printf(NUMBER_WITH_6_SPACES, result);
 			}
 			else
 			{
-				printf("%d       ", result);
+				printf(NUMBER_WITH_7_SPACES, result);
 			}
 		}
-		printf("\n");
+		printf(ENTER);
 	}
 }
 
