@@ -5,7 +5,6 @@ Purpose: This file print the chess table of given character
 		 and in given size
 \********************************************************/
 
-#define _CRT_SECURE_NO_WARNINGS
 #define ZERO (0)
 #define ENTER_CHAR ('\n')
 #define DECIMAL (10)
@@ -128,7 +127,7 @@ void main() {
 
 	/*get number and character from user*/
 	printf("Enter number: ");
-	scanf("%d", &number_from_user);
+	scanf_s("%d", &number_from_user);
 	/*catch the \n*/
 	getchar();
 	printf("Enter character: ");
